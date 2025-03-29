@@ -223,7 +223,7 @@ function getNextFridayThe13th(date) {
     currentDay.setMonth(currentDay.getMonth() + 1, 1);
   }
 
-  while (true) {
+  for (;;) {
     currentDay.setDate(13);
     if (currentDay.getDay() === 5) {
       return currentDay;
